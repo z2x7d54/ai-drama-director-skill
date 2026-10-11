@@ -30,6 +30,21 @@ HTML_NAME = 'AI短剧导演skill_8.0_离线图文阅读版.html'
 PDF_NAME = 'AI短剧导演skill_8.0_跨设备阅读版.pdf'
 ASSETS = ROOT / 'ai-drama-director-storyboard' / 'assets'
 IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)')
+HTML_IMAGE_RE = re.compile(r'<img\b(?=[^>]*\bsrc\s*=\s*")[^>]*>', re.I)
+
+def image_attributes(tag):
+    attrs = dict(re.findall(r'([\w-]+)\s*=\s*"([^"]*)"', tag))
+    return {key.lower(): html.unescape(value) for key, value in attrs.items()}
+
+def image_as_markdown(match):
+    attrs = image_attributes(match[0])
+    return f"![{attrs.get('alt', '')}]({attrs['src']})"
+
+def offline_image_tag(match):
+    attrs = image_attributes(match[0])
+    local = 'ai-drama-director-storyboard/assets/' + local_image(attrs['src']).name
+    return '<img src="' + html.escape(local, quote=True) + '" alt="' + html.escape(attrs.get('alt', ''), quote=True) + '" />'
+
 
 def local_image(url):
     name = Path(urlparse(url).path).name
@@ -42,6 +57,8 @@ source = MASTER.read_text(encoding='utf-8-sig')
 body = re.sub(r'\A---\n.*?\n---\n', '', source, count=1, flags=re.S)
 # Reading-copy links are unnecessary inside the reading copy itself.
 body = re.sub(r'<!-- cross-device-reading:start -->.*?<!-- cross-device-reading:end -->\n*', '', body, flags=re.S)
+# Normalize both Markdown image syntax and explicit inline HTML image tags.
+body = HTML_IMAGE_RE.sub(image_as_markdown, body)
 embedded = IMAGE_RE.sub(lambda m: f'![{m[1]}](data:image/png;base64,{base64.b64encode(local_image(m[2]).read_bytes()).decode("ascii")})', body)
 rendered = markdown.markdown(embedded, extensions=['tables', 'fenced_code', 'toc'])
 document = '''<!doctype html>
@@ -182,7 +199,8 @@ members=['ai短剧导演skill-8.0版.md','8.0启动指令.txt','分镜自检系�
 with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_DEFLATED) as archive:
     for name in members:
         if name == MASTER.name:
-            offline = IMAGE_RE.sub(lambda m:f'![{m[1]}](ai-drama-director-storyboard/assets/{local_image(m[2]).name})',source)
+            offline_source = HTML_IMAGE_RE.sub(offline_image_tag, source)
+            offline = IMAGE_RE.sub(lambda m:f'![{m[1]}](ai-drama-director-storyboard/assets/{local_image(m[2]).name})',offline_source)
             offline = re.sub(r'<!-- cross-device-reading:start -->.*?<!-- cross-device-reading:end -->', '<!-- cross-device-reading:start -->\n> **ZIP离线版：**请完整解压并保留图片目录。本MD使用包内图片；只发送一个文件阅读时，请发送配套PDF或HTML。制作分镜时使用本MD，图片不可见时以完整文字教学为依据，不声称已看见图片。\n<!-- cross-device-reading:end -->',offline,flags=re.S)
             archive.writestr(name,offline.encode('utf-8'))
         else:

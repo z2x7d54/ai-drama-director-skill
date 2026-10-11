@@ -10,7 +10,7 @@ metadata:
 > 文件署名水印：mr zhu。编辑、引用和转发本skill时保留；署名不要求进入分镜、图片或视频。
 
 <!-- cross-device-reading:start -->
-> **跨设备阅读：**本单文件MD的教学图片使用固定版本的HTTPS链接，联网且预览器允许外部图片时可显示。若微信、手机或电脑预览器仍不显示图片，直接使用[图片已内置的PDF阅读版](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.0_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)；也可下载[单文件离线HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.0_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)后用浏览器打开。制作分镜优先给智能体发送本MD；链接可访问不等于智能体已读取图片，不能虚报看图。完整文字教学同时保留。
+> **跨设备阅读：**本单文件MD的教学图用显式`<img>`内嵌图片标签，图片地址固定到仓库版本；支持HTML图片且允许外部加载的MD预览器会直接显示图，而非普通链接。预览器若禁用HTML、网络图片或未渲染MD，单改标签无法强制显示。若微信、手机或电脑预览器仍不显示图片，直接使用[图片已内置的PDF阅读版](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.0_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)；也可下载[单文件离线HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.0_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)后用浏览器打开。制作分镜优先给智能体发送本MD；链接可访问不等于智能体已读取图片，不能虚报看图。完整文字教学同时保留。
 <!-- cross-device-reading:end -->
 
 ## 0. 任务与制作方式
@@ -100,7 +100,7 @@ metadata:
 
 ## 2. 空间：先固定房间与人，再放摄影机
 
-![空间俯视教学：地标、人物轴线与机位](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/01-space-map.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/01-space-map.png" alt="空间俯视教学：地标、人物轴线与机位" />
 
 图01为虚构示意，蓝色A、橙色B和机位编号对应教学附录；图中的布局不能直接套到其他场景。
 
@@ -131,7 +131,7 @@ metadata:
 
 ### 2.3 轴线、视线与多人关系
 
-![正反打教学：换机位后相容的眼线与前景](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/02-reverse-angles.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/02-reverse-angles.png" alt="正反打教学：换机位后相容的眼线与前景" />
 
 常规机位在当前主要人物轴线同侧，保持相容的左右、视线和行进方向。举例：双人镜A画面左看右、B画面右看左，拍A和拍B应各看向对方合理的镜外位置；不要让两人都看同一方向，或都盯摄影机。坐者与站者、躺者与俯身者的眼线高度不同。
 
@@ -143,7 +143,7 @@ metadata:
 
 ### 2.4 床、沙发、拥抱等接触场景
 
-![床上姿态教学：近景继承身体关系](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/05-bed-body-state.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/05-bed-body-state.png" alt="床上姿态教学：近景继承身体关系" />
 
 图05是侧向关系示意，床的内外侧还须由本场空间卡确定；不把二维图误认为完整三维资产。
 
@@ -213,7 +213,7 @@ metadata:
 
 喜剧/突发反转先控制观众预期。原文要求出其不意时，避免提前给蓄势手部、慢推嘴唇、长对视泄露行动。动作可短促，事后反应要看清；“更细腻”不等于把果断角色改成反复犹疑。争执关注谁掌握主动、谁接收压力，姿态和距离变化可以成为切镜动机，不只轮流拍说话脸。
 
-![突发反转教学：预期、动作与回应](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/06-surprise-and-response.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/06-surprise-and-response.png" alt="突发反转教学：预期、动作与回应" />
 
 ### 3.4 撒娇、逗弄等要写出声音与身体的配合
 
@@ -238,7 +238,7 @@ metadata:
 
 ### 3.5 用“触发—变化—观察—接续”约束表演与切镜
 
-![表情发展与机位变化：切回后不重置](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/13-expression-continuity.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/13-expression-continuity.png" alt="表情发展与机位变化：切回后不重置" />
 
 对承载情绪变化的交流单位逐一检查四件事，范围可以是半句、整句或几句，不等于每镜填四项表：
 
@@ -277,7 +277,7 @@ metadata:
 
 ### 4.2 声画共用时间线
 
-![声画时间线教学：画面切换不重复计算对白](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/03-picture-sound-timeline.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/03-picture-sound-timeline.png" alt="声画时间线教学：画面切换不重复计算对白" />
 
 图03的11秒是附录虚构练习的规划时间；画面行、声音行和生成分组行共用同一条时间轴。
 
@@ -344,7 +344,7 @@ A说前半句时看A；后半句触及B时切B，A声音画外延续，是声音
 
 ### 6.2 每组带必要的上下文
 
-![联合组交接教学：手部结果切到人物回答](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/04-joint-boundary.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/04-joint-boundary.png" alt="联合组交接教学：手部结果切到人物回答" />
 
 组头至少给本组所有实际入画人物及版本、场景/道具、空间与起始状态。只画外发声者写声音来源，不冒充入画角色。不能只写“同上、接上一组、维持原状态”；分开复制后仍要能理解本组。引用真实图片或明确资产名称，不伪造文件。
 
@@ -544,7 +544,7 @@ A说前半句时看A；后半句触及B时切B，A声音画外延续，是声音
 
 ## 二、镜内注意力交接：信封到脸，不必切两镜
 
-![图14：同一构图内由信封转到人物](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/14-inframe-attention.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/14-inframe-attention.png" alt="图14：同一构图内由信封转到人物" />
 
 ### 原文前提
 
@@ -578,7 +578,7 @@ A说前半句时看A；后半句触及B时切B，A声音画外延续，是声音
 
 ## 三、整段疏密：先让关系发展，再决定镜长
 
-![图18：请求、接收与回应的段落安排](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/18-scene-rhythm.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/18-scene-rhythm.png" alt="图18：请求、接收与回应的段落安排" />
 
 ### 原文前提
 
@@ -600,7 +600,7 @@ A说前半句时看A；后半句触及B时切B，A声音画外延续，是声音
 
 ## 四、关键信息必须可读：看见信封，不等于知道约定
 
-![图19：可辨文字与没有交付的信息](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/19-readable-information.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/19-readable-information.png" alt="图19：可辨文字与没有交付的信息" />
 
 ### 原文前提
 
@@ -815,7 +815,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 ### 3. 正面→侧前方→正面的使用条件
 
-![表情发展与换机位：触发、观察、继承](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/13-expression-continuity.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/13-expression-continuity.png" alt="表情发展与换机位：触发、观察、继承" />
 
 这张图的三格为虚构教学，不规定每段都要三镜。另设明确源文：两名成年恋人并坐，A带笑问B“再陪我一会儿呗。”；B答“今天真不行。”；原文指定A听后收住笑，委屈地问“一小会儿也不行吗？”，B尚未答复。不得把B的拒绝改为答应，也不推断B离开的原因。下列只解释A的表情观察，可以在原声音连续时换角度：
 
@@ -894,7 +894,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 ## 三、观众先看见，不等于人物都知道
 
-![知情先后图：观众看见C、A看见C、B循目光看见C是三个不同节点](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/15-information-states.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/15-information-states.png" alt="知情先后图：观众看见C、A看见C、B循目光看见C是三个不同节点" />
 
 ### 3.1 图怎么读
 
@@ -928,7 +928,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 ## 四、接触对象、视线对象、话语对象分开追踪
 
-![三条关系分别追踪：B左手握A右手，A看向C并向C问话](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/16-attention-channels.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/16-attention-channels.png" alt="三条关系分别追踪：B左手握A右手，A看向C并向C问话" />
 
 ### 4.1 图怎么读
 
@@ -958,7 +958,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 ## 五、主要交流对象变了，轴线也要重新判断
 
-![多人轴线图：主要交流从A与B转为A与C；原有接触继续](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/17-changing-dialogue-axis.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/17-changing-dialogue-axis.png" alt="多人轴线图：主要交流从A与B转为A与C；原有接触继续" />
 
 ### 5.1 图怎么读
 
@@ -1055,7 +1055,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 > 成年送书员C把书交给成年记录员D。D接书后核对封面名称。成年同伴E在厅口等C，C交书后走向厅口，与E一起离开。片段结束时，D仍在核对书名。
 
-![图21：递交、可行离场路线与摄影机留D](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/21-group-exit-focus.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/21-group-exit-focus.png" alt="图21：递交、可行离场路线与摄影机留D" />
 
 图21采用本例导演拟定的俯视空间：图上方为后墙，桌T2在厅内中部，C起初在桌左，D坐桌右，出口D2在图上左侧，E在出口旁等候。左右是这张俯视图的基准，不是每个摄影机里的屏幕左右。三格解释动作阶段，不规定必须切三镜。
 
@@ -1083,7 +1083,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 ## 八、联合组还要交接尚未完成的交流
 
-![联合组交接图：信件问题尚未获答，人物知情与身体状态共同继承](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/20-joint-open-question.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/20-joint-open-question.png" alt="联合组交接图：信件问题尚未获答，人物知情与身体状态共同继承" />
 
 ### 8.1 图怎么读
 
@@ -1180,7 +1180,7 @@ K1在门内朝窗，拍关系时A画面左、B画面右。A—B轴线为桌两�
 
 B/C构成横向交流线。摄影机默认都在通道侧y>.70：K0从通道正面交代五人；KA从通道正面略偏A，拍A合理近景；KB从通道的C一侧朝B，拍B向C说话；KBC从通道正面适当偏置，收进B/C、双手及茶桌递接区域。所有机位在B/C线同侧。A面朝通道，拍A近景不强造B或C的肩作为前景；KB也不强求C肩，必须先有实际几何支持。
 
-![图22：五人茶室俯视关系与K0、KA、KB、KBC覆盖选择](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/22-group-coverage.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/22-group-coverage.png" alt="图22：五人茶室俯视关系与K0、KA、KB、KBC覆盖选择" />
 
 图中的机位与覆盖范围是导演选择示意，不是精确焦段、视锥或物理尺度证明。K0回答“谁在什么位置”；KA回答“谁说开场提示”；KB回答“B向谁索取”；KBC让观众看到一次真实递接。后两人没有本段额外反应任务，因此不必每镜露面。五人的存在由关系镜和后续场景首态共同延续。
 
@@ -1193,7 +1193,7 @@ B/C构成横向交流线。摄影机默认都在通道侧y>.70：K0从通道正�
 3. **换位：**仍是B的脸，但没有起身或移动过程就到了T3右侧、占了C的位置。这是空间问题，固定脸也不能修好。
 4. **新角度的不同屏幕投影：**摄影机改变角度或取景，B由画面偏左变成居中或偏右，仍在同一房间座位，相关地标与眼线可由新机位解释。这本身不是换位。
 
-![图23：用身份资产与房间地标区分正常、变脸、换位和新角度投影](https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/23-identity-vs-position.png)
+<img src="https://raw.githubusercontent.com/z2x7d54/ai-drama-director-skill/6df6a0567dc8820bff721af4daad08ca53025817/ai-drama-director-storyboard/assets/23-identity-vs-position.png" alt="图23：用身份资产与房间地标区分正常、变脸、换位和新角度投影" />
 
 图23的“新角度”不授权本例越过B/C交流线或调换座位。判断时先比身份资产，再比房间地标、人物朝向和动作阶段，最后用机位解释画面位置。新角度下五官透视变化不自动等于换脸；缺少可比面部信息时只能记为待核，不能因衣色相同就宣布身份正确。反过来，画面左右相同也不能证明人物仍在原位。
 

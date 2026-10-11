@@ -47,6 +47,8 @@ Example request:
 
 > Read the complete AI Short Drama Director Skill 8.0 and the supplied script, then storyboard the episodes I specify. First perform the content review in section 0.4. Preserve the original dialogue and story events. Specify character positions, hand and prop states, dialogue delivery, cuts, and continuity between segments. Every multi-shot generation segment must have an integer total duration from 1 to 30 seconds, inclusive. Individual shot durations and cut points may use decimals, but their sum must exactly equal the segment total. Check the result against the skill and deliver a complete TXT storyboard.
 
+Teaching figures use explicit inline `<img>` tags. Compatible Markdown viewers display the figures directly; viewers that block HTML or remote images still need the embedded PDF/HTML copies.
+
 ## Key rules
 
 - **Concise production prompts:** keep detailed reasoning in working notes. Put shared conditions in the segment header and shot-specific changes in each shot, preserving original dialogue and essential continuity.
