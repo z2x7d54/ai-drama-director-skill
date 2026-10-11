@@ -49,6 +49,8 @@ Example request:
 
 ## Key rules
 
+- **Concise production prompts:** keep detailed reasoning in working notes. Put shared conditions in the segment header and shot-specific changes in each shot, preserving original dialogue and essential continuity.
+
 - Understand the whole exchange before planning individual shots. Fix the scene layout, character positions, and movement paths; carry the same event state into each new angle.
 - Give dialogue a clear intention, with relevant emphasis, expressions or gestures, and a response from its recipient.
 - Let the content determine pacing and shot count. There is no universal five-second shot length, fixed episode duration, or required number of generation segments.
