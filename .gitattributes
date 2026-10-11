@@ -4,3 +4,6 @@
 *.yaml text eol=lf
 *.png binary
 *.zip binary
+*.pdf binary
+*.html text eol=lf
+*.py text eol=lf

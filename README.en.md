@@ -1,4 +1,4 @@
-# AI Short Drama Director Skill 8.0
+# AI短剧导演 Skill 8.0 | AI Short Drama Director
 
 [简体中文](README.md) | **English**
 
@@ -25,8 +25,11 @@ Typical workflow: **Script + Skill → agent-written storyboard → one segment 
 
 ## Start here
 
+- **For mobile or cross-device reading:** [PDF with all diagrams embedded](AI短剧导演skill_8.0_跨设备阅读版.pdf). Share the PDF alone; its illustrations do not require network access.
+- **For offline browser reading:** [Standalone HTML with embedded diagrams](AI短剧导演skill_8.0_离线图文阅读版.html). Download it and open it in a browser.
+
 - **Complete single-file skill:** [ai短剧导演skill-8.0版.md](ai短剧导演skill-8.0版.md), containing the main rules and three full teaching appendices.
-- **Download with illustrations:** [Complete illustrated ZIP](AI短剧导演skill_8.0_图文完整版.zip). Keep the folder structure after extraction so relative image links work.
+- **Download with illustrations:** [Complete illustrated ZIP](AI短剧导演skill_8.0_图文完整版.zip). The ZIP includes a Markdown copy with local image links, the image directory, and the standalone PDF/HTML reading copies. Keep its folder structure when extracting.
 - **Startup instructions:** [8.0启动指令.txt](8.0启动指令.txt). Send these with the skill and script, specifying the episodes and production constraints.
 - **Review an existing storyboard:** [Standalone self-check system](分镜自检系统_8.0独立版.md).
 - **Native skill entry:** [ai-drama-director-storyboard/SKILL.md](ai-drama-director-storyboard/SKILL.md). This directory includes the entry file, teaching references, 17 diagrams, and agent interface metadata.
@@ -56,6 +59,8 @@ Example request:
 
 ## Files and illustrations
 
-The complete Markdown file contains the full written explanation. Whether local relative images display depends on the receiving platform. For the illustrated version, provide the ZIP or the accompanying image directory.
+The main Markdown file includes the full written explanation and uses version-pinned HTTPS image URLs. Online viewers that allow external images can display them without a local asset folder. Some chat previews block external images, and an AI agent may not fetch them; a working URL does not establish that the recipient has viewed the image.
+
+For reading or sharing across devices, use the PDF with embedded diagrams, or download the standalone HTML and open it in a browser. Neither needs network access to load illustrations. The ZIP retains local image links for offline Markdown use after full extraction. The PDF and HTML contain the complete skill, all three teaching appendices, and all 17 diagrams; the documents remain in Chinese.
 
 This repository contains the skill, fictional teaching examples, and explanatory diagrams. It does not include production scripts, novels, finished videos, or local credentials. Planned timings and document checks do not establish video-model performance or guarantee platform approval.
