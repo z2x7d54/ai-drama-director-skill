@@ -58,6 +58,8 @@ Example request:
 - Make each segment independently usable, with the necessary character, prop, sound, knowledge, and unfinished-exchange states. Do not treat the previous segment's final frame as the only reference for every new camera angle.
 - In ensemble scenes, retain necessary relationship shots and reduce simultaneous actions or visible faces when they serve no purpose. Track identity and position separately.
 - Complete the content review before every new storyboard or revision, and verify that its findings are reflected in the result before delivery.
+- Verify dialogue against the source, read every segment independently, and trace each next-shot state back to its preceding evidence. Fix observed defects and recheck affected shots; a self-check claim is not evidence.
+- **This project’s kissing constraint:** continuously visible mouth-to-mouth contact lasts at most 3 seconds. Changing angles or generation segments does not reset the count. Meaningful non-contact footage may interrupt the view before returning. This is a user production requirement, not a universal platform policy.
 
 ## Files and illustrations
 
