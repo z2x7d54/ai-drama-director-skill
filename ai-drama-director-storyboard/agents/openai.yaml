@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI短剧导演 8.0"
+  short_description: "按剧本设计人物空间、情感表演和真实切点，交付可逐组生成的连续短剧分镜"
+  default_prompt: "使用 $ai-drama-director-storyboard 8.0，根据所给剧本与指定范围制作分镜，写清人物空间、表演、逐镜时长和联合组交接。"
+policy:
+  allow_implicit_invocation: true

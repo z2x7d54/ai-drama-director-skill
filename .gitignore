@@ -1,0 +1,18 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local scratch files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+__pycache__/
+.venv/
+.codex/
+work/
+提示词.txt
