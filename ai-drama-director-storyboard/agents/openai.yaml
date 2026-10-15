@@ -1,6 +1,6 @@
 interface:
-  display_name: "AI短剧导演 8.1"
-  short_description: "学习人物空间、动作接剪与组间交接，制作可逐组生成的精简分镜"
-  default_prompt: "使用 $ai-drama-director-storyboard 8.1，按指定剧本范围制作分镜。先完成源文和审核预检，学会空间、动作与联合组教学，再按正式格式交付精简执行稿并逐对核验。"
+  display_name: "AI短剧导演 8.2"
+  short_description: "情绪跨镜发展，人物空间与动作连续，输出可逐组使用的精简分镜"
+  default_prompt: "使用 $ai-drama-director-storyboard 8.2 制作指定范围分镜。先核源文与审核预检，学习空间、情绪、声音覆盖与联合组教学；情绪表达需要时增镜，保持原话和动作连续。按7节交付精简执行稿并核全部相邻镜和组界。"
 policy:
   allow_implicit_invocation: true

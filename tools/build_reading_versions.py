@@ -25,9 +25,9 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Tabl
 from PIL import Image as PILImage
 
 ROOT = Path(__file__).resolve().parents[1]
-MASTER = ROOT / 'ai短剧导演skill-8.1版.md'
-HTML_NAME = 'AI短剧导演skill_8.1_离线图文阅读版.html'
-PDF_NAME = 'AI短剧导演skill_8.1_跨设备阅读版.pdf'
+MASTER = ROOT / 'ai短剧导演skill-8.2版.md'
+HTML_NAME = 'AI短剧导演skill_8.2_离线图文阅读版.html'
+PDF_NAME = 'AI短剧导演skill_8.2_跨设备阅读版.pdf'
 ASSETS = ROOT / 'ai-drama-director-storyboard' / 'assets'
 IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)')
 HTML_IMAGE_RE = re.compile(r'<img\b(?=[^>]*\bsrc\s*=\s*")[^>]*>', re.I)
@@ -63,7 +63,7 @@ embedded = IMAGE_RE.sub(lambda m: f'![{m[1]}](data:image/png;base64,{base64.b64e
 rendered = markdown.markdown(embedded, extensions=['tables', 'fenced_code', 'toc'])
 document = '''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI短剧导演 Skill 8.1 — mr zhu</title>
+<title>AI短剧导演 Skill 8.2 — mr zhu</title>
 <style>
 :root{color-scheme:light}body{margin:0;background:#f4f6fa;color:#182b43;font:17px/1.85 system-ui,-apple-system,"Microsoft YaHei",sans-serif}
 main{max-width:920px;margin:auto;padding:26px 22px 70px;background:white}h1,h2,h3,h4{line-height:1.5;scroll-margin-top:20px}h2{margin-top:2.2em;border-bottom:1px solid #dae2ec;padding-bottom:.35em}
@@ -187,15 +187,15 @@ def footer(canvas,doc):
     canvas.saveState()
     canvas.setFont(font_name,8)
     canvas.setFillColor(colors.HexColor('#64748b'))
-    canvas.drawString(42,24,'AI短剧导演 Skill 8.1 · mr zhu')
+    canvas.drawString(42,24,'AI短剧导演 Skill 8.2 · mr zhu')
     canvas.drawRightString(page_w-42,24,str(doc.page))
     canvas.restoreState()
 
-pdf=SimpleDocTemplate(str(ROOT/PDF_NAME),pagesize=A4,rightMargin=42,leftMargin=42,topMargin=42,bottomMargin=42,title='AI短剧导演 Skill 8.1 — 跨设备图文阅读版',author='mr zhu',pageCompression=1)
+pdf=SimpleDocTemplate(str(ROOT/PDF_NAME),pagesize=A4,rightMargin=42,leftMargin=42,topMargin=42,bottomMargin=42,title='AI短剧导演 Skill 8.2 — 跨设备图文阅读版',author='mr zhu',pageCompression=1)
 pdf.build(story,onFirstPage=footer,onLaterPages=footer)
 
-bundle=ROOT/'AI短剧导演skill_8.1_图文完整版.zip'
-members=['README.md','README.en.md','ai短剧导演skill-8.1版.md','8.1启动指令.txt','分镜自检系统_8.1独立版.md','8.1升级说明与验证记录.md',HTML_NAME,PDF_NAME]
+bundle=ROOT/'AI短剧导演skill_8.2_图文完整版.zip'
+members=['README.md','README.en.md','ai短剧导演skill-8.2版.md','8.2启动指令.txt','分镜自检系统_8.2独立版.md','8.2升级说明与验证记录.md',HTML_NAME,PDF_NAME]
 with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_DEFLATED) as archive:
     for name in members:
         if name == MASTER.name:

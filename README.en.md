@@ -1,40 +1,34 @@
 # AI Drama Director Skill · AI短剧导演 Skill
 
-**Version 8.1 · Author: mr zhu · [中文](README.md)**
+**Version 8.2 · Author: mr zhu · [中文](README.md)**
 
-Turn a script into concise storyboard prompts for generating one multi-shot clip per group. Version 8.1 teaches two core abilities: **keeping characters in one coherent space and continuing actions across cuts.** It is a self-contained illustrated course with worked examples, followed by practical checks.
+Turn a script into concise storyboard prompts, generating one multi-shot clip per group. Version 8.2 teaches emotional development, continuous sound, coherent space, and action across cuts. Add shots when expression needs them; keep each change of view useful and preserve the source.
 
 ## Choose a file
 
-- **For ChatGPT, DeepSeek, or another storyboard-writing agent:** [Complete 8.1 skill](ai短剧导演skill-8.1版.md). The Chinese-language Markdown includes the course, examples, output format, and review process.
-- **For reading on a phone or computer:** [PDF with embedded images](AI短剧导演skill_8.1_跨设备阅读版.pdf), or download the [standalone offline HTML](AI短剧导演skill_8.1_离线图文阅读版.html) and open it in a browser.
-- **For offline storage:** [Illustrated ZIP](AI短剧导演skill_8.1_图文完整版.zip). Keep the extracted image folders.
-- **For native skill installation:** [ai-drama-director-storyboard/SKILL.md](ai-drama-director-storyboard/SKILL.md), together with its assets.
-- **For reviewing a storyboard after a long conversation:** [Standalone review instructions](分镜自检系统_8.1独立版.md). These complement the complete course.
+- **For ChatGPT, DeepSeek, or another writing agent:** [Complete 8.2 Markdown](ai短剧导演skill-8.2版.md). The Chinese-language file includes all instruction, diagrams, worked examples, output format, and checks.
+- **For reading on a phone or computer:** [PDF with embedded images](AI短剧导演skill_8.2_跨设备阅读版.pdf), or download the [standalone offline HTML](AI短剧导演skill_8.2_离线图文阅读版.html).
+- **For offline storage or native installation:** [Illustrated ZIP](AI短剧导演skill_8.2_图文完整版.zip), containing [SKILL.md](ai-drama-director-storyboard/SKILL.md) and local assets. Preserve its folders.
+- **For a separate review after a long conversation:** [8.2 review instructions](分镜自检系统_8.2独立版.md). The complete skill remains sufficient on its own.
 
-## What the course teaches
+## What 8.2 teaches
 
-1. **Direct an event before choosing shots.** Work out the source events, dialogue, action, and viewer expectations, then choose coverage and cut points.
-2. **Build repeatable spatial relationships.** Anchor people to landmarks, body orientations, and feasible routes. Distinguish world position, screen position, and a character's anatomical left/right. Derive multiple views from one map.
-3. **Continue motion across cuts.** Track contact, grip, release, support, and elapsed offscreen time. Cover hugs, turns, walking, and developing expressions without restarting the action.
-4. **Connect independently generated groups.** Plan the scene first, then choose generation boundaries. Each group contains its own starting conditions; adjacent shots offer a useful change of observation while preserving the event state.
-5. **Use references and handle ensembles.** Separate identity, layout, composition, and action-state references. Keep the complete scene map while selecting coverage for the current interaction.
-6. **Learn through complete examples.** A letter handoff and a reunion with an observer include fictional source text, blocking, copyable prompts, and explanations of every adjacent cut. A new-scene exercise checks transfer.
+1. Carry a supported emotion from its trigger through visible behavior, the other character's reception, and the next shot. Distinguish an excuse, a suspicion, and a fact.
+2. Preserve the full dialogue or inner voice while selecting useful speaker, listener, action, relationship, or environmental coverage. Concurrent reactions do not add time twice.
+3. Keep world position, screen direction, anatomical left/right, contact, props, support, and offscreen elapsed time consistent.
+4. Give each independently generated group its own necessary starting conditions, including emotional state and unfinished exchanges.
+5. Learn from complete fictional examples: a letter handoff, a reunion with an observer, and a new studio conversation covering jealousy and continuous inner voice.
 
-The course contains **14 teaching figures, including 12 new original diagrams**. It retains source fidelity, performance direction, vocal emphasis, shared picture/sound timing, mandatory content prechecks, and concise production output.
+The course contains **14 figures, including 3 new diagrams**. Each group totals **an integer from 1 through 30 seconds, inclusive**. Individual boundaries may use decimals but must add up exactly. Ordinary close-ups may start around 2–4 seconds for planning; sustained performance may need longer. Neither shot counts nor these durations are quotas.
 
-Each generated group must be **an integer from 1 through 30 seconds, inclusive**. Individual shot boundaries may use decimals, but their durations must add up exactly. Continuous visible mouth-to-mouth contact is limited to three seconds under this project's requirements; changing angles or generation groups does not reset the count. This is a project constraint, not a claim about universal platform policy.
+Continuous visible mouth-to-mouth contact is limited to three seconds under this project's requirements. Changing angles or generation groups does not reset the count. This does not claim universal platform policy or guaranteed approval.
 
-## Start a project
+## Use and evidence
 
-Send the complete skill and current script to the writing agent, specify the episode/shot range, completed material, and available references, then use the [startup instructions](8.1启动指令.txt). Copy each finished production group into your video tool. Keep teaching explanations and review reports outside production prompts.
+Send the complete Markdown, current source, scope, completed material, and available references, using the [startup instructions](8.2启动指令.txt). Copy one complete production group at a time into the video tool. Keep explanations and review reports outside those prompts.
 
-> Use AI Drama Director Skill 8.1 to storyboard the attached script for [scope]. Read the source and complete the content precheck. Apply the spatial and action lessons before producing concise, independently copyable groups. Check every adjacent shot and group boundary for position, action phase, sound, and coverage. Preserve the exact dialogue; each group must total an integer of 1–30 seconds. Verify suspected adaptation gaps against the supplied or authorized novel rather than inventing plot.
+The update retains source fidelity, mandatory content prechecks, verification of suspected adaptation gaps, ensemble coverage, portable illustrations, and concise output. It corrects ambiguous direction wording, door identification, overly restrictive emotion-change wording, and confusion between cuts and camera movement. See the [upgrade and validation record](8.2升级说明与验证记录.md).
 
-## Images and evidence
+The root Markdown uses image URLs pinned to Git commits. Native packages and ZIP use local assets; PDF and HTML embed the figures. The update was checked at the text, example, timing, state-transition, and reading-package levels. Positive user feedback on the previous production revision informed the method. **No new Seed2.5 generation or independent downstream-model test is claimed.** Public examples are fictional and exclude private scripts and video frames.
 
-The root Markdown uses image URLs pinned to a Git commit. The native package and ZIP use local assets; the PDF and HTML embed their images. A viewer that blocks external HTML images may require the PDF.
-
-This update includes sampled visual analysis of the reference clip, primary-source research, spatial reasoning, dialogue/timing checks, and reading-package validation. **Seed2.5 generation has not been tested.** Clear text does not guarantee a successful generated film. See the [upgrade and validation record](8.1升级说明与验证记录.md). All teaching examples are fictional, and the public repository excludes private scripts and reference-video frames.
-
-Historical 8.0 reading copies remain available. Use 8.1 for new work and retain the attribution **mr zhu** when sharing or quoting it.
+Historical releases remain available. Use 8.2 for new work and retain attribution **mr zhu** when sharing or quoting it.
