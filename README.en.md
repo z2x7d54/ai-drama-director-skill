@@ -15,12 +15,15 @@ Turn a script into concise storyboard prompts, generating one multi-shot clip pe
 
 1. Carry a supported emotion from its trigger through visible behavior, the other character's reception, and the next shot. Distinguish an excuse, a suspicion, and a fact.
    Both characters perform during dialogue: a listener responds through gaze, expression, and ongoing action. Fictional examples cover shyness, anger, exasperation, and urgency.
+   Infer supported subtext from the full context, checking whether an intervening event changed the cause. Add compatible small gestures within established adult romantic relationships; default to natural, readable emotion.
 2. Preserve the full dialogue or inner voice while selecting useful speaker, listener, action, relationship, or environmental coverage. Concurrent reactions do not add time twice.
 3. Keep world position, screen direction, anatomical left/right, contact, props, support, and offscreen elapsed time consistent.
 4. Give each independently generated group its own necessary starting conditions, including emotional state and unfinished exchanges.
 5. Learn from complete fictional examples: a letter handoff, a reunion with an observer, and a new studio conversation covering jealousy and continuous inner voice.
 
-The course contains **14 figures, including 3 new diagrams**. Each group totals **an integer from 1 through 30 seconds, inclusive**. Individual boundaries may use decimals but must add up exactly. Ordinary close-ups may start around 2–4 seconds for planning; sustained performance may need longer. Neither shot counts nor these durations are quotas.
+The course contains **15 figures, including 4 new diagrams**. Each group totals **an integer from 1 through 30 seconds, inclusive**. Individual boundaries may use decimals but must add up exactly. Ordinary close-ups may start around 2–4 seconds for planning; sustained performance may need longer. Neither shot counts nor these durations are quotas.
+
+The current workflow primarily retains Seed2.5's generated audio. Emotionally active or otherwise flat dialogue may benefit from seven or eight useful shots across twenty seconds, divided into shorter generation groups where appropriate. Figure D distinguishes editing density from generation length. The user's reported failures around seconds 8–12 are observations from this setup, not a universal model limit; group boundaries must also respect speech, action, and emotional continuity.
 
 Continuous visible mouth-to-mouth contact is limited to three seconds under this project's requirements. Changing angles or generation groups does not reset the count. This does not claim universal platform policy or guaranteed approval.
 
