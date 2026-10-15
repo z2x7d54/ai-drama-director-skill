@@ -14,6 +14,7 @@ Turn a script into concise storyboard prompts, generating one multi-shot clip pe
 ## What 8.2 teaches
 
 1. Carry a supported emotion from its trigger through visible behavior, the other character's reception, and the next shot. Distinguish an excuse, a suspicion, and a fact.
+   Both characters perform during dialogue: a listener responds through gaze, expression, and ongoing action. Fictional examples cover shyness, anger, exasperation, and urgency.
 2. Preserve the full dialogue or inner voice while selecting useful speaker, listener, action, relationship, or environmental coverage. Concurrent reactions do not add time twice.
 3. Keep world position, screen direction, anatomical left/right, contact, props, support, and offscreen elapsed time consistent.
 4. Give each independently generated group its own necessary starting conditions, including emotional state and unfinished exchanges.
