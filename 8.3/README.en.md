@@ -17,6 +17,8 @@ Turn scripts into concise prompts for one multi-shot generation group at a time.
 | [Review instructions](分镜自检系统_8.3独立版.md) | Restore checks after a long conversation. |
 | [Upgrade and validation](8.3升级说明与验证记录.md) | See teaching changes, editorial corrections, and validation scope. |
 
-The course includes 20 teaching figures and six complete prompt examples. Screen-direction examples state their assumptions and valid alternatives; an exit on one edge does not impose a universal entrance rule for every camera position. Generation groups total 1–30 integer seconds, preserving original dialogue, performance, and action continuity.
+The course includes 26 teaching figures and ten complete prompt examples. Screen-direction examples state their assumptions and valid alternatives; an exit on one edge does not impose a universal entrance rule for every camera position. Generation groups total 1–30 integer seconds, preserving original dialogue, performance, and action continuity.
 
 Teaching figures do not replace production references. Text and reading-package checks do not establish video-generation success. Retain attribution **mr zhu** when editing, quoting, or sharing.
+
+This reinforcement restores detailed teaching on master shots versus brief relationship views, five-person coverage, identity versus position and screen projection, staged discovery and changing interaction axes, whom to stay with after an exit, focus shifts and readable information, and sudden versus gradual actions. All lessons and four additional complete examples are in the main Markdown. The upgrade notes record the knowledge migration.

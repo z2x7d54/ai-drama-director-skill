@@ -8,7 +8,7 @@ Turn scripts into concise storyboard prompts, one multi-shot generation group at
 
 | Version | Focus | Folder | Complete skill | Illustrated reading |
 | --- | --- | --- | --- | --- |
-| **8.3 · Recommended** | Derive screen direction, eyelines, action and contact across cuts; retains 8.2 performance and production methods. | [8.3](8.3/) | [Markdown](8.3/ai短剧导演skill-8.3版.md) | [PDF](8.3/AI短剧导演skill_8.3_跨设备阅读版.pdf) |
+| **8.3 · Recommended** | Continuity, performance, and ensemble teaching with 26 figures and ten complete examples; covers staged discovery, changing axes, identity, position, and projection. | [8.3](8.3/) | [Markdown](8.3/ai短剧导演skill-8.3版.md) | [PDF](8.3/AI短剧导演skill_8.3_跨设备阅读版.pdf) |
 | 8.2 | Emotional development, active listeners, moving dialogue, and concrete prompt wording; retains the spatial and action methods from 8.1. | [8.2](8.2/) | [Markdown](8.2/ai短剧导演skill-8.2版.md) | [PDF](8.2/AI短剧导演skill_8.2_跨设备阅读版.pdf) |
 | 8.1 | Character positions, eyelines, action phases, and continuity between generation groups. | [8.1](8.1/) | [Markdown](8.1/ai短剧导演skill-8.1版.md) | [PDF](8.1/AI短剧导演skill_8.1_跨设备阅读版.pdf) |
 | 8.0 | Historical foundation covering shots, ensembles, performance, and production checks. | [8.0](8.0/) | [Markdown](8.0/ai短剧导演skill-8.0版.md) | [PDF](8.0/AI短剧导演skill_8.0_跨设备阅读版.pdf) |
