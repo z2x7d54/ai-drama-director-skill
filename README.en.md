@@ -19,13 +19,15 @@ Turn a script into concise storyboard prompts, generating one multi-shot clip pe
 2. Preserve the full dialogue or inner voice while selecting useful speaker, listener, action, relationship, or environmental coverage. Concurrent reactions do not add time twice.
 3. Keep world position, screen direction, anatomical left/right, contact, props, support, and offscreen elapsed time consistent.
 4. Give each independently generated group its own necessary starting conditions, including emotional state and unfinished exchanges.
-5. Learn from complete fictional examples: a letter handoff, a reunion with an observer, and a new studio conversation covering jealousy and continuous inner voice.
+5. Learn from complete fictional examples: a seven-second handoff in one group, a reunion with an observer, jealousy and continuous inner voice, and a daylight moving conversation with sitting, standing, and a third person entering.
 
-The course contains **15 figures, including 4 new diagrams**. Each group totals **an integer from 1 through 30 seconds, inclusive**. Individual boundaries may use decimals but must add up exactly. Ordinary close-ups may start around 2–4 seconds for planning; sustained performance may need longer. Neither shot counts nor these durations are quotas.
+The course contains **17 figures, including 6 new diagrams**. Each group totals **an integer from 1 through 30 seconds, inclusive**. Individual boundaries may use decimals but must add up exactly. Ordinary close-ups may start around 2–4 seconds for planning; sustained performance may need longer. Neither shot counts nor these durations are quotas.
 
 The current workflow primarily retains Seed2.5's generated audio. Emotionally active or otherwise flat dialogue may benefit from seven or eight useful shots across twenty seconds, divided into shorter generation groups where appropriate. Figure D distinguishes editing density from generation length. The user's reported failures around seconds 8–12 are observations from this setup, not a universal model limit; group boundaries must also respect speech, action, and emotional continuity.
 
 Continuous visible mouth-to-mouth contact is limited to three seconds under this project's requirements. Changing angles or generation groups does not reset the count. This does not claim universal platform policy or guaranteed approval.
+
+Section 0.0 prioritizes continuity before spoken execution while retaining source fidelity. Figure E teaches concrete performance wording and stable time-of-day conditions; figure F and appendix D demonstrate moving dialogue across two generation groups. All teaching remains in the single complete Markdown.
 
 ## Use and evidence
 
