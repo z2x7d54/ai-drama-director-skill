@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI短剧导演 8.3"
+  short_description: "根据固定空间与动作阶段推导下镜，保留情绪和原声，输出可逐组使用的精简分镜"
+  default_prompt: "使用 $ai-drama-director-storyboard 8.3 制作指定范围分镜，先核源文与场景依据、完成审核预检，按5.5.1与5.9推导进出画、视线和动作接续，保留原话与情绪，按7节交完整精简稿并核全部相邻镜及组界。"
+policy:
+  allow_implicit_invocation: true
