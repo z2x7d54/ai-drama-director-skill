@@ -10,7 +10,7 @@ metadata:
 > 文件署名水印：mr zhu。编辑、引用和转发本skill时保留；署名不要求进入分镜、图片或视频。
 
 <!-- cross-device-reading:start -->
-> **跨设备阅读：**本单文件MD的教学图用显式`<img>`内嵌图片标签，图片地址固定到仓库版本；支持HTML图片且允许外部加载的MD预览器会直接显示图，而非普通链接。预览器若禁用HTML、网络图片或未渲染MD，单改标签无法强制显示。若微信、手机或电脑预览器仍不显示图片，直接使用[图片已内置的PDF阅读版](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.1_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)；也可下载[单文件离线HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.1_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)后用浏览器打开。制作分镜优先给智能体发送本MD；链接可访问不等于智能体已读取图片，不能虚报看图。完整文字教学同时保留。
+> **跨设备阅读：**本单文件MD的教学图用显式`<img>`内嵌图片标签，图片地址固定到仓库版本；支持HTML图片且允许外部加载的MD预览器会直接显示图，而非普通链接。预览器若禁用HTML、网络图片或未渲染MD，单改标签无法强制显示。若微信、手机或电脑预览器仍不显示图片，直接使用[图片已内置的PDF阅读版](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/8.1/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.1_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)；也可下载[单文件离线HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/8.1/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_8.1_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)后用浏览器打开。制作分镜优先给智能体发送本MD；链接可访问不等于智能体已读取图片，不能虚报看图。完整文字教学同时保留。
 <!-- cross-device-reading:end -->
 
 ## 0. 任务与制作方式
