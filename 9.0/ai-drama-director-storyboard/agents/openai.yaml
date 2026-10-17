@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI短剧导演 9.0"
+  short_description: "学习整场导演方法，按人物性格和剧情安排情绪、空间与镜头，交付精简连续的联合分镜"
+  default_prompt: "使用 $ai-drama-director-storyboard 9.0，先按学习路径理解方法，再读当前剧本并完成审核预检，安排人物行动与空间，排镜分组，核人设、情绪和全部衔接后交完整精简分镜。"
+policy:
+  allow_implicit_invocation: true
