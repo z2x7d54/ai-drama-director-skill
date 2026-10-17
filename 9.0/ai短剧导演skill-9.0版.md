@@ -7,7 +7,13 @@ metadata:
 
 # AI短剧导演 Skill｜9.0
 
-> 署名：mr zhu。编辑、引用和转发保留署名；不要求进入分镜、图片或视频。
+本Skill为AI短剧创作提供实用参考，涵盖剧本分析、分镜规划、镜头设计、人物表演、情绪表达、空间调度、联合镜头衔接及质量检查。通过图文教学与完整示例，帮助智能体将剧情转化为清晰、连贯、便于执行的分镜提示词。
+
+- 制作人员：mr zhu
+- 制作AI模型：ChatGPT6.1
+- 参与测试模型：豆包、DeepSeek
+
+> 编辑、引用和转发保留署名mr zhu；不要求进入分镜、图片或视频。
 
 <!-- cross-device-reading:start -->
 > **阅读与使用：**写分镜发送本MD即可，全部方法和示例在正文。教学图用内嵌图片标签；网络图片被阅读器屏蔽时，使用配套的图片内置PDF或单文件离线HTML。原生skill及ZIP带本地assets；可下载[图片内置PDF](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/9.0/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_9.0_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)或[单文件HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/9.0/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_9.0_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)。图片辅助学习，不能读取图片时依完整文字，不声称已看图。
