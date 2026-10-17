@@ -11,7 +11,10 @@ metadata:
 
 - 制作人员：mr zhu
 - 制作AI模型：ChatGPT6.1
-- 参与测试模型：豆包、DeepSeek
+- 参与测试：豆包网页版、DeepSeek网页版
+- 当前官方型号参照（2026-10-17）：[豆包 Seed2.1 系列](https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity)、[DeepSeek V4.1 Flash](https://www.deepseek.com/news/deepseek-v4-1-flash/)
+
+型号按当前官方发布资料补注；未核实各网页版模式实际调用的具体子型号，也不作为历史测试会话的型号记录。
 
 > 编辑、引用和转发保留署名mr zhu；不要求进入分镜、图片或视频。
 
