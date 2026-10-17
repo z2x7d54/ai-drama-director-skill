@@ -1,8 +1,8 @@
-"""Build standalone HTML/PDF reading copies and refresh the illustrated ZIP.
+"""Build self-contained Markdown/HTML/PDF copies and refresh the illustrated ZIP.
 
 Run from any location: python tools/build_reading_versions.py
 Dependencies: pip install markdown reportlab
-The main Markdown remains the canonical agent input; native skill assets stay local.
+The lean main Markdown remains the canonical agent input; native assets stay local.
 """
 from pathlib import Path
 import base64
@@ -26,6 +26,7 @@ from PIL import Image as PILImage
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / 'ai短剧导演skill-9.0版.md'
+EMBEDDED_MD_NAME = 'ai短剧导演skill-9.0版_图片内嵌单文件.md'
 HTML_NAME = 'AI短剧导演skill_9.0_离线图文阅读版.html'
 PDF_NAME = 'AI短剧导演skill_9.0_跨设备阅读版.pdf'
 ASSETS = ROOT / 'ai-drama-director-storyboard' / 'assets'
@@ -54,6 +55,13 @@ def local_image(url):
     return path
 
 source = MASTER.read_text(encoding='utf-8-sig')
+# Store the original PNG bytes directly in a separate Markdown reading copy.
+# The agent entry stays lean: base64 image text is not directing instruction.
+embedded_md = HTML_IMAGE_RE.sub(image_as_markdown, source)
+embedded_md = IMAGE_RE.sub(lambda m: f'![{m[1]}](data:image/png;base64,{base64.b64encode(local_image(m[2]).read_bytes()).decode("ascii")})', embedded_md)
+embedded_md = re.sub(r'<!-- cross-device-reading:start -->.*?<!-- cross-device-reading:end -->', '<!-- cross-device-reading:start -->\n> **图片内嵌单文件MD：**33张教学图的原始PNG数据均在本文件内，不依赖网络取图或外部图片目录。需要支持data图片的Markdown阅读器；若阅读器不支持，请用配套PDF或离线HTML。给智能体写分镜时优先发送标准完整版MD，避免图片编码占用文本上下文。\n<!-- cross-device-reading:end -->', embedded_md, flags=re.S)
+(ROOT / EMBEDDED_MD_NAME).write_text(embedded_md, encoding='utf-8', newline='\n')
+
 body = re.sub(r'\A---\n.*?\n---\n', '', source, count=1, flags=re.S)
 # Reading-copy links are unnecessary inside the reading copy itself.
 body = re.sub(r'<!-- cross-device-reading:start -->.*?<!-- cross-device-reading:end -->\n*', '', body, flags=re.S)
@@ -195,7 +203,7 @@ pdf=SimpleDocTemplate(str(ROOT/PDF_NAME),pagesize=A4,rightMargin=42,leftMargin=4
 pdf.build(story,onFirstPage=footer,onLaterPages=footer)
 
 bundle=ROOT/'AI短剧导演skill_9.0_图文完整版.zip'
-members=['README.md','README.en.md','ai短剧导演skill-9.0版.md','9.0启动指令.txt','分镜自检系统_9.0独立版.md','9.0升级说明与验证记录.md',HTML_NAME,PDF_NAME]
+members=['README.md','README.en.md','ai短剧导演skill-9.0版.md',EMBEDDED_MD_NAME,'9.0启动指令.txt','分镜自检系统_9.0独立版.md','9.0升级说明与验证记录.md',HTML_NAME,PDF_NAME]
 with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_DEFLATED) as archive:
     for name in members:
         if name == MASTER.name:
@@ -209,4 +217,4 @@ with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_DEFLATED) as archive:
         if path.is_file(): archive.write(path,path.relative_to(ROOT).as_posix())
 with zipfile.ZipFile(bundle) as archive:
     assert archive.testzip() is None
-print(f'Built {HTML_NAME}, {PDF_NAME}, and {bundle.name}; {len(IMAGE_RE.findall(body))} image placements.')
+print(f'Built {EMBEDDED_MD_NAME}, {HTML_NAME}, {PDF_NAME}, and {bundle.name}; {len(IMAGE_RE.findall(body))} image placements.')

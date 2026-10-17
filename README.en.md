@@ -18,7 +18,7 @@ Turn scripts into concise storyboard prompts, one multi-shot generation group at
 
 1. Give a writing agent the [complete 9.0 Markdown](9.0/ai短剧导演skill-9.0版.md), your script and scope, using the [startup prompt](9.0/9.0启动指令.txt).
 2. After the agent checks its storyboard, copy each complete generation group and its corresponding references into the video tool.
-3. Read the [PDF](9.0/AI短剧导演skill_9.0_跨设备阅读版.pdf) on another device, or download the [illustrated ZIP](9.0/AI短剧导演skill_9.0_图文完整版.zip) for offline storage.
+3. Download the [self-contained image Markdown](9.0/ai短剧导演skill-9.0版_图片内嵌单文件.md) for a compatible reader; all 33 original PNGs are stored in the file. You can also read the [PDF](9.0/AI短剧导演skill_9.0_跨设备阅读版.pdf) on another device, or download the [illustrated ZIP](9.0/AI短剧导演skill_9.0_图文完整版.zip) for offline storage.
 
 Each version has its own Markdown, PDF, offline HTML, ZIP, startup prompt, review instructions, and supporting resources. Native installation entry: [9.0/ai-drama-director-storyboard](9.0/ai-drama-director-storyboard/).
 

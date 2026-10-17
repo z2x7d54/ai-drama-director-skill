@@ -9,6 +9,7 @@ Version 9.0 develops continuity between independently generated groups, characte
 | File | Purpose |
 | --- | --- |
 | [Complete Markdown](ai短剧导演skill-9.0版.md) | The single complete input for the writing agent. |
+| [Self-contained image Markdown](ai短剧导演skill-9.0版_图片内嵌单文件.md) | Download for offline reading; all 33 original PNGs are embedded as data URLs. Requires a compatible Markdown reader. |
 | [Embedded-image PDF](AI短剧导演skill_9.0_跨设备阅读版.pdf) | Read on another device with embedded figures and Chinese fonts. |
 | [Offline HTML](AI短剧导演skill_9.0_离线图文阅读版.html) | Download and open in a browser; figures are embedded. |
 | [Illustrated ZIP](AI短剧导演skill_9.0_图文完整版.zip) | Extract completely and retain local assets. |
@@ -16,6 +17,8 @@ Version 9.0 develops continuity between independently generated groups, characte
 | [Startup prompt](9.0启动指令.txt) | Send with the current script, references, and scope. |
 | [Review instructions](分镜自检系统_9.0独立版.md) | Restore checks after a long conversation. |
 | [Upgrade and validation](9.0升级说明与验证记录.md) | See decision coverage, knowledge migration, and actual validation scope. |
+
+To transfer one Markdown file with its figures, use the self-contained image edition. It needs no image network requests or external image folder. Data-image support varies between Markdown readers and chat previews; use the embedded PDF or offline HTML when unsupported. For agent input, prefer the standard complete Markdown to avoid consuming text context with base64 image data. Both editions contain the same teaching.
 
 Generation groups total 1–30 integer seconds; internal cut points may be fractional. Preserve source dialogue, relationships, and events. The current workflow uses Seed2.5 original audio and adds background music in post. The three-second limit on continuously visible mouth-to-mouth kissing is a project rule, not a universal platform regulation.
 

@@ -19,7 +19,7 @@ metadata:
 > 编辑、引用和转发保留署名mr zhu；不要求进入分镜、图片或视频。
 
 <!-- cross-device-reading:start -->
-> **阅读与使用：**写分镜发送本MD即可，全部方法和示例在正文。教学图用内嵌图片标签；网络图片被阅读器屏蔽时，使用配套的图片内置PDF或单文件离线HTML。原生skill及ZIP带本地assets；可下载[图片内置PDF](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/9.0/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_9.0_%E8%B7%A8%E8%AE%BE%E5%A4%87%E9%98%85%E8%AF%BB%E7%89%88.pdf)或[单文件HTML](https://github.com/z2x7d54/ai-drama-director-skill/blob/main/9.0/AI%E7%9F%AD%E5%89%A7%E5%AF%BC%E6%BC%94skill_9.0_%E7%A6%BB%E7%BA%BF%E5%9B%BE%E6%96%87%E9%98%85%E8%AF%BB%E7%89%88.html)。图片辅助学习，不能读取图片时依完整文字，不声称已看图。
+> **阅读与使用：**写分镜发送本MD即可，全部方法和示例在正文。单文件离线看图使用配套“ai短剧导演skill-9.0版_图片内嵌单文件.md”，33张原图数据已存入文件，需阅读器支持data图片。原生Skill与ZIP另带本地assets；图片内置PDF或单文件离线HTML可用于不支持内嵌图片的阅读器。图片辅助学习，不能读取图片时依完整文字，不声称已看图。
 <!-- cross-device-reading:end -->
 
 ## 0. 任务与制作方式
